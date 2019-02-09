@@ -12,8 +12,8 @@ public class Constant {
     public static final int N_M7 = -7;
 
 
-    public static final String NORD = "N";
-    public static final String SUD = "S";
+    public static final String NORTH = "N";
+    public static final String SOUTH = "S";
     public static final String WEST = "W";
     public static final String EAST = "E";
 
