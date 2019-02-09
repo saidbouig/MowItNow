@@ -1,4 +1,4 @@
-package fr.xebia.mowItNow.model;
+package fr.xebia.mowItNow.exception;
 
 public class WrongDirectionException extends RuntimeException {
 

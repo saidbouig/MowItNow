@@ -1,5 +1,6 @@
 package fr.xebia.mowItNow.model;
 
+import fr.xebia.mowItNow.exception.WrongDirectionException;
 import org.junit.jupiter.api.Test;
 
 import static fr.xebia.mowItNow.utils.Constant.*;

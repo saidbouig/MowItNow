@@ -1,5 +1,6 @@
 package fr.xebia.mowItNow.model;
 
+import fr.xebia.mowItNow.exception.WrongDirectionException;
 import lombok.Getter;
 
 import java.util.Objects;
