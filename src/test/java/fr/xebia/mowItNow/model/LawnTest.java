@@ -4,6 +4,7 @@ import fr.xebia.mowItNow.exception.WrongLawnException;
 import org.junit.jupiter.api.Test;
 
 import static fr.xebia.mowItNow.utils.Constant.*;
+import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class LawnTest {

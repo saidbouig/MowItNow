@@ -32,7 +32,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass></mainClass>
+                            <mainClass>fr.xebia.mowItNow.controller.MainMowIt</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
