@@ -12,39 +12,6 @@ import static org.junit.jupiter.api.Assertions.*;
 class MowerFileHelperTest {
 
     /**
-     * Wrong input file test.
-     */
-    @Test
-    public void should_throw_exception_when_wrong_file_content() {
-        assertThrows(WrongFileException.class, () -> {
-            new MowerFileHelper(getPath("wrong_file.txt"));
-        });
-
-    }
-
-    /**
-     * Empty input file test.
-     */
-    @Test
-    public void should_throw_exception_when_empty_file() {
-        assertThrows(WrongFileException.class, () -> {
-            new MowerFileHelper(getPath("empty_file.txt"));
-        });
-
-    }
-
-    /**
-     * un-existed input file test.
-     */
-    @Test
-    public void should_throw_exception_when_file_not_exists() {
-        assertThrows(NullPointerException.class, () -> {
-            getPath("un_existed_file.txt");
-        });
-
-    }
-
-    /**
      * Right input file test.
      */
     @Test
@@ -81,6 +48,73 @@ class MowerFileHelperTest {
 
     }
 
+
+    /**
+     * Wrong input file test.
+     */
+    @Test
+    public void should_throw_exception_when_wrong_file_content() {
+        assertThrows(WrongFileException.class, () -> {
+            new MowerFileHelper(getPath("wrong_file_1.txt"));
+        });
+
+    }
+
+    /**
+     * Wrong moves list in input file test.
+     */
+    @Test
+    public void should_throw_exception_when_wrong_moves() {
+        assertThrows(WrongFileException.class, () -> {
+            new MowerFileHelper(getPath("wrong_file_2.txt"));
+        });
+
+    }
+
+    /**
+     * Wrong start position in input file test.
+     */
+    @Test
+    public void should_throw_exception_when_wrong_start_position() {
+        assertThrows(WrongFileException.class, () -> {
+            new MowerFileHelper(getPath("wrong_file_3.txt"));
+        });
+
+    }
+
+    /**
+     * Empty input file test.
+     */
+    @Test
+    public void should_throw_exception_when_empty_file() {
+        assertThrows(WrongFileException.class, () -> {
+            new MowerFileHelper(getPath("empty_file.txt"));
+        });
+
+    }
+
+    /**
+     * un-existed input file test.
+     */
+    @Test
+    public void should_throw_exception_when_file_not_exists() {
+        assertThrows(NullPointerException.class, () -> {
+            getPath("un_existed_file.txt");
+        });
+
+    }
+
+    /**
+     * Wrong path file test.
+     */
+    @Test
+    public void should_throw_exception_when_wrong_path_file() {
+        assertThrows(WrongFileException.class, () -> {
+            String wrongFilePath = "wrong\\path.txt";
+            new MowerFileHelper(wrongFilePath);
+        });
+
+    }
 
 
 
