@@ -17,9 +17,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-import static fr.xebia.mowItNow.utils.Constant.N_0;
-import static fr.xebia.mowItNow.utils.Constant.N_1;
-import static fr.xebia.mowItNow.utils.Constant.N_2;
+import static fr.xebia.mowItNow.utils.Constant.*;
 
 public class MowerFileHelper {
     public MowerFileHelper(final String path) throws WrongFileException {
@@ -58,7 +56,7 @@ public class MowerFileHelper {
     }
 
     private void processMoves(final Position newPosition, final Direction newDirection, final Lawn initLawn,
-                       final List<Move> movesList) {
+                              final List<Move> movesList) {
         MowerService mowerService = new MowerService(newPosition, newDirection, initLawn);
         for (Move move : movesList) {
             mowerService.moveTo(move);

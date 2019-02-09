@@ -16,16 +16,16 @@ public final class Move {
         command = AVANCE;
     }
 
-    public static Move to(final String command) {
-        return new Move(command);
-    }
-
     private Move(final String newCommand) throws WrongMoveException {
         if (newCommand.equals(AVANCE) || newCommand.equals(DROITE) || newCommand.equals(GAUCHE)) {
             this.command = newCommand;
         } else {
             throw new WrongMoveException(String.format("Move command %s is not supported", newCommand));
         }
+    }
+
+    public static Move to(final String command) {
+        return new Move(command);
     }
 
     @Override

@@ -5,9 +5,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static fr.xebia.mowItNow.utils.ConstantTest.*;
-import static fr.xebia.mowItNow.utils.ConstantTest.N_0;
-import static fr.xebia.mowItNow.utils.ConstantTest.N_3;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class PositionTest {
 

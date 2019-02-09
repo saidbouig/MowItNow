@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 
 import static fr.xebia.mowItNow.utils.Constant.*;
 import static fr.xebia.mowItNow.utils.ConstantTest.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class MoveTest {
 

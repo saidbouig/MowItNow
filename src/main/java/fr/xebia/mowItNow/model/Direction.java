@@ -12,10 +12,6 @@ public final class Direction {
 
     private final String direction;
 
-    public static Direction of(final String direction) {
-        return new Direction(direction);
-    }
-
     private Direction(final String newDirection) throws WrongDirectionException {
         if (newDirection.equals(NORTH) || newDirection.equals(SOUTH) || newDirection.equals(EAST)
                 || newDirection.equals(WEST)) {
@@ -23,6 +19,10 @@ public final class Direction {
         } else {
             throw new WrongDirectionException(String.format("Direction %s is not supported", newDirection));
         }
+    }
+
+    public static Direction of(final String direction) {
+        return new Direction(direction);
     }
 
     @Override

@@ -4,9 +4,10 @@ import fr.xebia.mowItNow.exception.WrongDirectionException;
 import org.junit.jupiter.api.Test;
 
 import static fr.xebia.mowItNow.utils.Constant.*;
-import static fr.xebia.mowItNow.utils.Constant.WEST;
 import static fr.xebia.mowItNow.utils.ConstantTest.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 
 public class DirectionTest {
 
