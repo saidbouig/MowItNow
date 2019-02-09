@@ -56,5 +56,16 @@ public class DirectionTest {
         assertEquals(direction.getDirection(), WEST);
     }
 
+    /**
+     * Wrong direction test.
+     */
+    @Test
+    public void wrongDirectionTest() {
+
+        assertThrows(WrongDirectionException.class, () -> {
+            Direction.of(WRONG_DIRECTION);
+        });
+    }
+
 
 }

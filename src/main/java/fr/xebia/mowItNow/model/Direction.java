@@ -1,11 +1,39 @@
 package fr.xebia.mowItNow.model;
 
-public class Direction {
-    public static Direction of(String north) {
-        return new Direction();
+import lombok.Getter;
+
+import java.util.Objects;
+
+import static fr.xebia.mowItNow.utils.Constant.*;
+
+@Getter
+public final class Direction {
+
+    private final String direction;
+
+    public static Direction of(final String direction) {
+        return new Direction(direction);
     }
 
-    public short getDirection() {
-        return 0;
+    private Direction(final String newDirection) throws WrongDirectionException {
+        if (newDirection.equals(NORTH) || newDirection.equals(SOUTH) || newDirection.equals(EAST)
+                || newDirection.equals(WEST)) {
+            this.direction = newDirection;
+        } else {
+            throw new WrongDirectionException(String.format("Direction %s is not supported", newDirection));
+        }
     }
+
+    @Override
+    public boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Direction that = (Direction) o;
+        return Objects.equals(direction, that.direction);
+    }
+
 }
