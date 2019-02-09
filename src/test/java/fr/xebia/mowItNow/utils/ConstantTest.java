@@ -1,6 +1,7 @@
 package fr.xebia.mowItNow.utils;
 
 import fr.xebia.mowItNow.model.Direction;
+import fr.xebia.mowItNow.model.Lawn;
 import fr.xebia.mowItNow.model.Move;
 
 import static fr.xebia.mowItNow.utils.Constant.*;
@@ -63,6 +64,8 @@ public final class ConstantTest {
     public static final int N_5 = 5;
     public static final int N_6 = 6;
     public static final int N_M7 = -7;
+
+    public static final Lawn LAWN = new Lawn(N_6, N_6);
 
 
 
