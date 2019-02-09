@@ -56,28 +56,12 @@ public class MowerService {
                 break;
 
             case DROITE:
-                if (Direction.of(NORTH).equals(direction)) {
-                    this.setDirection(Direction.of(EAST));
-                } else if (Direction.of(SOUTH).equals(direction)) {
-                    this.setDirection(Direction.of(WEST));
-                } else if (Direction.of(EAST).equals(direction)) {
-                    this.setDirection(Direction.of(SOUTH));
-                } else {
-                    this.setDirection(Direction.of(NORTH));
-                }
+                switchDirection(EAST, WEST, SOUTH, NORTH);
 
                 break;
 
             case GAUCHE:
-                if (Direction.of(NORTH).equals(direction)) {
-                    this.setDirection(Direction.of(WEST));
-                } else if (Direction.of(SOUTH).equals(direction)) {
-                    this.setDirection(Direction.of(EAST));
-                } else if (Direction.of(EAST).equals(direction)) {
-                    this.setDirection(Direction.of(NORTH));
-                } else {
-                    this.setDirection(Direction.of(SOUTH));
-                }
+                switchDirection(WEST, EAST, NORTH, SOUTH);
                 break;
 
             default:
@@ -85,6 +69,18 @@ public class MowerService {
 
         }
 
+    }
+
+    private void switchDirection(String east, String west, String south, String north) {
+        if (Direction.of(NORTH).equals(direction)) {
+            this.setDirection(Direction.of(east));
+        } else if (Direction.of(SOUTH).equals(direction)) {
+            this.setDirection(Direction.of(west));
+        } else if (Direction.of(EAST).equals(direction)) {
+            this.setDirection(Direction.of(south));
+        } else {
+            this.setDirection(Direction.of(north));
+        }
     }
 
     @Override
