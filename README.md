@@ -1,7 +1,6 @@
 # MowItNow
 
 [![Build Status](https://travis-ci.org/saidbouig/MowItNow.svg?branch=master)](https://travis-ci.org/saidbouig/MowItNow)
-[![Coverage Status](https://coveralls.io/repos/github/saidbouig/MowItNow/badge.svg?branch=develop)](https://coveralls.io/github/saidbouig/MowItNow?branch=develop)
 
 ## Used technologies
 
