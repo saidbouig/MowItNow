@@ -10,9 +10,11 @@
     Git
     Travis
     
-    * Functional programming: [Java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-    * Tests: [JUnit 5](https://junit.org/junit5/)
-    * Test Driven Development: [TDD](https://en.wikipedia.org/wiki/Test-driven_development)
+   Functional programming: [Java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+   
+   Tests: [JUnit 5](https://junit.org/junit5/)
+   
+   Test Driven Development: [TDD](https://en.wikipedia.org/wiki/Test-driven_development)
     
 ## Installation
 
