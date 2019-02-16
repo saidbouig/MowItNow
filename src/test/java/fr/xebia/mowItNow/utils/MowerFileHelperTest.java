@@ -32,7 +32,7 @@ class MowerFileHelperTest {
         ByteArrayOutputStream outContent = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outContent));
         new MowerFileHelper(getPath("right_file_2.txt"));
-        assertEquals("1 3 N\n5 1 E".trim(), outContent.toString().trim());
+        assertEquals("1 3 N\n5 1 E".trim(), outContent.toString().trim().replaceAll("\\r\\n", "\n").replaceAll("\\r", "\n"));
 
     }
 
